@@ -1,0 +1,779 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><!-- start: index -->
+<html xml:lang="tr" lang="tr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Shadow Forum</title>
+<!-- start: headerinclude -->
+<link rel="icon" type="image/png" href="logo.png" />
+<link rel="alternate" type="application/rss+xml" title="Son Aktiviteler (RSS 2.0)" href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/syndication.php" />
+<link rel="alternate" type="application/atom+xml" title="Son Aktiviteler (Atom 1.0)" href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/syndication.php?type=atom1.0" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<script type="text/javascript" src="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/jscripts/jquery.js?ver=1804"></script>
+<script type="text/javascript" src="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/jscripts/jquery.plugins.min.js?ver=1804"></script>
+<script type="text/javascript" src="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/jscripts/general.js?ver=1804"></script>
+<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link type="text/css" rel="stylesheet" href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/cache/themes/theme4/latestposts.css?t=1764145321" />
+<link type="text/css" rel="stylesheet" href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/cache/themes/theme4/avatarep.css?t=1764145321" />
+<link type="text/css" rel="stylesheet" href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/cache/themes/theme4/global.css?t=1764145321" />
+<link type="text/css" rel="stylesheet" href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/cache/themes/theme4/extra.css?t=1764145321" />
+<link type="text/css" rel="stylesheet" href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/cache/themes/theme4/css3.css?t=1764145321" />
+<link type="text/css" rel="stylesheet" href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/cache/themes/theme4/footer.css?t=1764145321" />
+<link type="text/css" rel="stylesheet" href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/cache/themes/theme4/accountswitcher.css?t=1764145321" />
+
+<script type="text/javascript">
+	lang.unknown_error = "Sebebi bilinmeyen bir hata oluştu.";
+
+	lang.select2_match = "Bir sonuç mevcut, gezinmek için aşağı ve yukarı ok tuşlarını kullanın.";
+	lang.select2_matches = "{1} sonuç mevcut, gezinmek için aşağı ve yukarı ok tuşlarını kullanın.";
+	lang.select2_nomatches = "Hiçbir sonuç bulunamadı.";
+	lang.select2_inputtooshort_single = "Lütfen, bir veya daha fazla karakter giriniz.";
+	lang.select2_inputtooshort_plural = "En az {1} karakter giriniz.";
+	lang.select2_inputtoolong_single = "Lütfen, bir karakter silin.";
+	lang.select2_inputtoolong_plural = "Lütfen, {1} karakter silin.";
+	lang.select2_selectiontoobig_single = "Yanlızca bir öge seçebilirsiniz.";
+	lang.select2_selectiontoobig_plural = "Yanlızca, {1} öge seçebilirsiniz.";
+	lang.select2_loadmore = "Sonuçlar yükleniyor&hellip";
+	lang.select2_searching = "Aranıyor&hellip;";
+
+	var modal_zindex = 9995;
+	var cookieDomain = ".w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion";
+	var cookiePath = "/";
+	var cookiePrefix = "";
+	var cookieSecureFlag = "0";
+	var deleteevent_confirm = "Bu etkinliği silmek istediğinizden emin misiniz?";
+	var removeattach_confirm = "Bu ek dosyayı konudan tamamen silmek istediğinize emin misiniz?";
+	var loading_text = 'Lütfen Bekleyiniz.<br />Sayfa Yükleniyor...';
+	var saving_changes = 'Değişiklikler Kaydediliyor...';
+	var use_xmlhttprequest = "1";
+	var my_post_key = "d85737c8417b8e7d32a785e24204d4db";
+	var rootpath = "http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion";
+	var imagepath = "http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/images/emerald";
+  	var yes_confirm = "Evet";
+	var no_confirm = "Hayır";
+	var MyBBEditor = null;
+	var spinner_image = "http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/images/emerald/spinner.gif";
+	var spinner = "<img src='" + spinner_image +"' alt='' />";
+	
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+<script>
+	$(document).ready(function(){
+	
+	//Check to see if the window is top if not then display button
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 100) {
+			$('.scrollToTop').fadeIn();
+		} else {
+			$('.scrollToTop').fadeOut();
+		}
+	});
+	
+	//Click event to scroll to top
+	$('.scrollToTop').click(function(){
+		$('html, body').animate({scrollTop : 0},800);
+		return false;
+	});
+	
+	$('.scrollToDown').click(function(){
+		$('html, body').animate({scrollTop:$(document).height()},800);
+		return false;
+	});
+	
+});
+</script>
+<!-- end: headerinclude -->
+<script type="text/javascript">
+<!--
+lang.no_new_posts = "Yeni Yorum Yok";
+lang.click_mark_read = "Forumları Okundu Kabul Et";
+// -->
+</script>
+</head>
+<body>
+<!-- start: header -->
+<div class="haut" style="height:70px">
+	<a href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion" id="logo"><i class="fa fa-eclipse"></i> Shadow</a>
+	<span class="useroptions">
+		<ul id="menu-deroulant">
+			<li><a href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion">Anasayfa</a></li>
+			<li><a href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/memberlist.php">Üyeler</a></li>
+			<li><a href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/showteam.php">Takım</a></li>
+			<li><a href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/misc.php?action=help">Yardım</a></li>
+			<li><a href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/search.php">Ara</a></li>
+			<!-- start: header_welcomeblock_guest -->
+<li><a href="member.php?action=register">Register</a></li>
+<li><a href="member.php?action=login">Login</a></li>
+<script>
+	var connected = 0;
+</script>
+<!-- end: header_welcomeblock_guest -->
+		</ul>
+	</span>
+</div>
+<div style="width: 100%; height: 70px;"></div>
+<div id="header_block"><span id="hb_title">Shadow Forum</div>
+<!-- Start - Navigation menu -->
+<nav class="headerlist" style="display:none">
+<ul>
+  <li><a href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion"><i class="fa fa-home"></i> Anasayfa</a></li><li>
+	<a href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/memberlist.php"><i class="fa fa-users"></i> Üyeler</a></li><li>
+	<a href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/misc.php?action=help"><i class="fa fa-support"></i> Yardım</a></li><li>
+	<a href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/search.php"><i class="fa fa-search"></i> Ara</a>
+</li></ul>
+</nav>
+<!-- End - Navigation menu -->
+<center>
+<!-- Start - Advice -->
+<div id="mobile_member">
+</div>
+<!-- End - Advice -->
+</center>
+
+<div id="container">
+		<a name="top" id="top"></a>
+		<div id="header">
+		<div id="content">
+			<div class="wrapper">
+				
+				
+				
+				
+				
+				
+				
+				<!-- start: nav -->
+<div class="navigation">
+	<a href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/index.php"><span id="home_bit"><i class="fa fa-home"></i></span></a><span><!-- start: nav_bit_active -->
+<span class="active">Shadow Forum</span>
+<!-- end: nav_bit_active --></span>
+</div>
+<!-- end: nav -->
+					<br />
+<!-- end: header -->
+        <noscript>
+            <p style="font-weight: bold; font-size: 1.2em;">Your browser has JavaScript disabled. If you would like to use all features of this site, it is mandatory to enable JavaScript.</p>
+        </noscript>
+        
+<div class="forum" style="float: left;"><!-- start: forumbit_depth1_cat -->
+<table border="0" cellspacing="0" cellpadding="7" class="tborder">
+<thead>
+<tr>
+<td class="thead" colspan="5">
+<div class="expcolimage"><i id="cat_1_img" class="fa fa-window-minimize expander" ></i></div>
+<div><strong><a href="forumdisplay.php?fid=1">Yeni Gelenler</a></strong><br /><div class="smalltext">Foruma yeni başladıysan burdaki açıklamaları mutlaka oku</div></div>
+</td>
+</tr>
+</thead>
+<tbody style="" id="cat_1_e">
+<tr>
+<td class="tcat" colspan="2"><span class="smalltext"><strong>Forum</strong></span></td>
+<td id="threads" class="tcat" width="85" align="center" style="white-space: nowrap; font-size: 16px;"><span class="smalltext"><strong>Konu</strong></span></td>
+<td id="replies" class="tcat" width="85" align="center" style="white-space: nowrap; font-size: 16px;"><span class="smalltext"><strong>Yorum</strong></span></td>
+<td id="lastpost" class="tcat" width="350" align="center"><span class="smalltext"><strong>Son Yorum</strong></span></td>
+</tr>
+<!-- start: forumbit_depth2_forum -->
+<tr>
+<td class="trow1" align="center" width="1"><div class="forum_status forum_on ajax_mark_read" title="Yeni Yorum Var" id="mark_read_2"><i class="fa fa-comments"></i></div></td>
+<td class="trow1">
+<strong><a href="forumdisplay.php?fid=2">Forum Kuralları</a></strong><div class="smalltext">Yeni başlayanlar bu kısmı mutlaka okuyun</div>
+</td>
+<td id="threads" class="trow1" align="center" style="font-size: 16px;white-space: nowrap">13</td>
+<td id="replies" class="trow1" align="center" style="font-size: 16px;white-space: nowrap">83</td>
+<td id="lastpost" class="trow1" align="center" style="white-space: nowrap"><!-- start: forumbit_depth2_forum_lastpost -->
+<span class="smalltext">
+<a href="showthread.php?tid=2075&amp;action=lastpost" title="insta hack"><strong>insta hack</strong></a> Yazar: <a href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/member.php?action=profile&amp;uid=5084">nevşehir50</a><br>
+<i style="font-size:400;" class="far fa-clock"></i> 12-26-2025, 10:35 PM</span>
+<!-- end: forumbit_depth2_forum_lastpost --></td>
+</tr>
+<!-- end: forumbit_depth2_forum -->
+</tbody>
+</table>
+<br />
+<!-- end: forumbit_depth1_cat --><!-- start: forumbit_depth1_cat -->
+<table border="0" cellspacing="0" cellpadding="7" class="tborder">
+<thead>
+<tr>
+<td class="thead" colspan="5">
+<div class="expcolimage"><i id="cat_4_img" class="fa fa-window-minimize expander" ></i></div>
+<div><strong><a href="forumdisplay.php?fid=4">Sohbet</a></strong><br /><div class="smalltext">Sohbet</div></div>
+</td>
+</tr>
+</thead>
+<tbody style="" id="cat_4_e">
+<tr>
+<td class="tcat" colspan="2"><span class="smalltext"><strong>Forum</strong></span></td>
+<td id="threads" class="tcat" width="85" align="center" style="white-space: nowrap; font-size: 16px;"><span class="smalltext"><strong>Konu</strong></span></td>
+<td id="replies" class="tcat" width="85" align="center" style="white-space: nowrap; font-size: 16px;"><span class="smalltext"><strong>Yorum</strong></span></td>
+<td id="lastpost" class="tcat" width="350" align="center"><span class="smalltext"><strong>Son Yorum</strong></span></td>
+</tr>
+<!-- start: forumbit_depth2_forum -->
+<tr>
+<td class="trow1" align="center" width="1"><div class="forum_status forum_on ajax_mark_read" title="Yeni Yorum Var" id="mark_read_5"><i class="fa fa-comments"></i></div></td>
+<td class="trow1">
+<strong><a href="forumdisplay.php?fid=5">Seviyeli</a></strong><div class="smalltext">Küfürsüz, seviyeli, ciddi sohbet
+Bu konu altında küfür ve hakaret eden olursa banlıyoruz
+Dumansız hava sahası gibi düşünün :)</div>
+</td>
+<td id="threads" class="trow1" align="center" style="font-size: 16px;white-space: nowrap">28</td>
+<td id="replies" class="trow1" align="center" style="font-size: 16px;white-space: nowrap">175</td>
+<td id="lastpost" class="trow1" align="center" style="white-space: nowrap"><!-- start: forumbit_depth2_forum_lastpost -->
+<span class="smalltext">
+<a href="showthread.php?tid=1380&amp;action=lastpost" title="&quot;Sma hastası bebek&quot; işine benle girecek 2 vijdansiz kişiye ihtiyacım var"><strong>&quot;Sma hastası bebek&quot; işine...</strong></a> Yazar: <a href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/member.php?action=profile&amp;uid=5092">ssd34</a><br>
+<i style="font-size:400;" class="far fa-clock"></i> <span title="12-28-2025">Dün</span>, 07:08 AM</span>
+<!-- end: forumbit_depth2_forum_lastpost --></td>
+</tr>
+<!-- end: forumbit_depth2_forum --><!-- start: forumbit_depth2_forum -->
+<tr>
+<td class="trow2" align="center" width="1"><div class="forum_status forum_on ajax_mark_read" title="Yeni Yorum Var" id="mark_read_3"><i class="fa fa-comments"></i></div></td>
+<td class="trow2">
+<strong><a href="forumdisplay.php?fid=3">Genel Sohbet</a></strong><div class="smalltext">Her telden</div>
+</td>
+<td id="threads" class="trow2" align="center" style="font-size: 16px;white-space: nowrap">425</td>
+<td id="replies" class="trow2" align="center" style="font-size: 16px;white-space: nowrap">1,881</td>
+<td id="lastpost" class="trow2" align="center" style="white-space: nowrap"><!-- start: forumbit_depth2_forum_lastpost -->
+<span class="smalltext">
+<a href="showthread.php?tid=1284&amp;action=lastpost" title="Herkese Merhaba Yeniyim Sosyal Medya Hack İle İlgili ?"><strong>Herkese Merhaba Yeniyim S...</strong></a> Yazar: <a href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/member.php?action=profile&amp;uid=5099">yorpha</a><br>
+<i style="font-size:400;" class="far fa-clock"></i> <span title="12-29-2025, 02:45 PM">5 saat önce</span></span>
+<!-- end: forumbit_depth2_forum_lastpost --></td>
+</tr>
+<!-- end: forumbit_depth2_forum -->
+</tbody>
+</table>
+<br />
+<!-- end: forumbit_depth1_cat --><!-- start: forumbit_depth1_cat -->
+<table border="0" cellspacing="0" cellpadding="7" class="tborder">
+<thead>
+<tr>
+<td class="thead" colspan="5">
+<div class="expcolimage"><i id="cat_6_img" class="fa fa-window-minimize expander" ></i></div>
+<div><strong><a href="forumdisplay.php?fid=6">İllegal Faaliyetler</a></strong><br /><div class="smalltext">Her türlü illegal faaliyet</div></div>
+</td>
+</tr>
+</thead>
+<tbody style="" id="cat_6_e">
+<tr>
+<td class="tcat" colspan="2"><span class="smalltext"><strong>Forum</strong></span></td>
+<td id="threads" class="tcat" width="85" align="center" style="white-space: nowrap; font-size: 16px;"><span class="smalltext"><strong>Konu</strong></span></td>
+<td id="replies" class="tcat" width="85" align="center" style="white-space: nowrap; font-size: 16px;"><span class="smalltext"><strong>Yorum</strong></span></td>
+<td id="lastpost" class="tcat" width="350" align="center"><span class="smalltext"><strong>Son Yorum</strong></span></td>
+</tr>
+<!-- start: forumbit_depth2_forum -->
+<tr>
+<td class="trow2" align="center" width="1"><div class="forum_status forum_on ajax_mark_read" title="Yeni Yorum Var" id="mark_read_8"><i class="fa fa-comments"></i></div></td>
+<td class="trow2">
+<strong><a href="forumdisplay.php?fid=8">Uyuşturucu</a></strong><div class="smalltext"></div>
+</td>
+<td id="threads" class="trow2" align="center" style="font-size: 16px;white-space: nowrap">122</td>
+<td id="replies" class="trow2" align="center" style="font-size: 16px;white-space: nowrap">333</td>
+<td id="lastpost" class="trow2" align="center" style="white-space: nowrap"><!-- start: forumbit_depth2_forum_lastpost -->
+<span class="smalltext">
+<a href="showthread.php?tid=2076&amp;action=lastpost" title="LSD"><strong>LSD</strong></a> Yazar: <a href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/member.php?action=profile&amp;uid=5087">jackstone</a><br>
+<i style="font-size:400;" class="far fa-clock"></i> 12-27-2025, 04:52 PM</span>
+<!-- end: forumbit_depth2_forum_lastpost --></td>
+</tr>
+<!-- end: forumbit_depth2_forum --><!-- start: forumbit_depth2_forum -->
+<tr>
+<td class="trow1" align="center" width="1"><div class="forum_status forum_on ajax_mark_read" title="Yeni Yorum Var" id="mark_read_9"><i class="fa fa-comments"></i></div></td>
+<td class="trow1">
+<strong><a href="forumdisplay.php?fid=9">Sahtecilik</a></strong><div class="smalltext"></div>
+</td>
+<td id="threads" class="trow1" align="center" style="font-size: 16px;white-space: nowrap">57</td>
+<td id="replies" class="trow1" align="center" style="font-size: 16px;white-space: nowrap">202</td>
+<td id="lastpost" class="trow1" align="center" style="white-space: nowrap"><!-- start: forumbit_depth2_forum_lastpost -->
+<span class="smalltext">
+<a href="showthread.php?tid=1379&amp;action=lastpost" title="Kara Para Aklama"><strong>Kara Para Aklama</strong></a> Yazar: <a href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/member.php?action=profile&amp;uid=5003">enkral</a><br>
+<i style="font-size:400;" class="far fa-clock"></i> <span title="12-29-2025, 03:42 PM">4 saat önce</span></span>
+<!-- end: forumbit_depth2_forum_lastpost --></td>
+</tr>
+<!-- end: forumbit_depth2_forum --><!-- start: forumbit_depth2_forum -->
+<tr>
+<td class="trow2" align="center" width="1"><div class="forum_status forum_on ajax_mark_read" title="Yeni Yorum Var" id="mark_read_10"><i class="fa fa-comments"></i></div></td>
+<td class="trow2">
+<strong><a href="forumdisplay.php?fid=10">Şiddet</a></strong><div class="smalltext"></div>
+</td>
+<td id="threads" class="trow2" align="center" style="font-size: 16px;white-space: nowrap">25</td>
+<td id="replies" class="trow2" align="center" style="font-size: 16px;white-space: nowrap">98</td>
+<td id="lastpost" class="trow2" align="center" style="white-space: nowrap"><!-- start: forumbit_depth2_forum_lastpost -->
+<span class="smalltext">
+<a href="showthread.php?tid=2016&amp;action=lastpost" title="acısız ihtihar taktiği verin  19 yaşımdayım"><strong>acısız ihtihar taktiği ve...</strong></a> Yazar: <a href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/member.php?action=profile&amp;uid=4322">hkn4089</a><br>
+<i style="font-size:400;" class="far fa-clock"></i> 12-23-2025, 08:14 AM</span>
+<!-- end: forumbit_depth2_forum_lastpost --></td>
+</tr>
+<!-- end: forumbit_depth2_forum --><!-- start: forumbit_depth2_forum -->
+<tr>
+<td class="trow1" align="center" width="1"><div class="forum_status forum_on ajax_mark_read" title="Yeni Yorum Var" id="mark_read_11"><i class="fa fa-comments"></i></div></td>
+<td class="trow1">
+<strong><a href="forumdisplay.php?fid=11">CC</a></strong><div class="smalltext"></div>
+</td>
+<td id="threads" class="trow1" align="center" style="font-size: 16px;white-space: nowrap">148</td>
+<td id="replies" class="trow1" align="center" style="font-size: 16px;white-space: nowrap">500</td>
+<td id="lastpost" class="trow1" align="center" style="white-space: nowrap"><!-- start: forumbit_depth2_forum_lastpost -->
+<span class="smalltext">
+<a href="showthread.php?tid=1772&amp;action=lastpost" title="FİZİKİ POS CİHAZI ARAYIŞINDAYIZ..!"><strong>FİZİKİ POS CİHAZI ARAYIŞI...</strong></a> Yazar: <a href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/member.php?action=profile&amp;uid=5070">Bygölge</a><br>
+<i style="font-size:400;" class="far fa-clock"></i> <span title="12-28-2025">Dün</span>, 02:50 AM</span>
+<!-- end: forumbit_depth2_forum_lastpost --></td>
+</tr>
+<!-- end: forumbit_depth2_forum --><!-- start: forumbit_depth2_forum -->
+<tr>
+<td class="trow2" align="center" width="1"><div class="forum_status forum_on ajax_mark_read" title="Yeni Yorum Var" id="mark_read_12"><i class="fa fa-comments"></i></div></td>
+<td class="trow2">
+<strong><a href="forumdisplay.php?fid=12">Diğerleri</a></strong><div class="smalltext"></div>
+</td>
+<td id="threads" class="trow2" align="center" style="font-size: 16px;white-space: nowrap">71</td>
+<td id="replies" class="trow2" align="center" style="font-size: 16px;white-space: nowrap">244</td>
+<td id="lastpost" class="trow2" align="center" style="white-space: nowrap"><!-- start: forumbit_depth2_forum_lastpost -->
+<span class="smalltext">
+<a href="showthread.php?tid=2079&amp;action=lastpost" title="Öldürme Arzusu"><strong>Öldürme Arzusu</strong></a> Yazar: <a href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/member.php?action=profile&amp;uid=5095">katilimben</a><br>
+<i style="font-size:400;" class="far fa-clock"></i> <span title="12-28-2025">Dün</span>, 12:30 PM</span>
+<!-- end: forumbit_depth2_forum_lastpost --></td>
+</tr>
+<!-- end: forumbit_depth2_forum --><!-- start: forumbit_depth2_forum -->
+<tr>
+<td class="trow1" align="center" width="1"><div class="forum_status forum_on ajax_mark_read" title="Yeni Yorum Var" id="mark_read_7"><i class="fa fa-comments"></i></div></td>
+<td class="trow1">
+<strong><a href="forumdisplay.php?fid=7">Hırsızlık</a></strong><div class="smalltext"></div>
+</td>
+<td id="threads" class="trow1" align="center" style="font-size: 16px;white-space: nowrap">16</td>
+<td id="replies" class="trow1" align="center" style="font-size: 16px;white-space: nowrap">72</td>
+<td id="lastpost" class="trow1" align="center" style="white-space: nowrap"><!-- start: forumbit_depth2_forum_lastpost -->
+<span class="smalltext">
+<a href="showthread.php?tid=1903&amp;action=lastpost" title="izmir içi para kazanmak isteyenler"><strong>izmir içi para kazanmak i...</strong></a> Yazar: <a href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/member.php?action=profile&amp;uid=4649">mario</a><br>
+<i style="font-size:400;" class="far fa-clock"></i> 10-18-2025, 09:17 AM</span>
+<!-- end: forumbit_depth2_forum_lastpost --></td>
+</tr>
+<!-- end: forumbit_depth2_forum -->
+</tbody>
+</table>
+<br />
+<!-- end: forumbit_depth1_cat --><!-- start: forumbit_depth1_cat -->
+<table border="0" cellspacing="0" cellpadding="7" class="tborder">
+<thead>
+<tr>
+<td class="thead" colspan="5">
+<div class="expcolimage"><i id="cat_13_img" class="fa fa-window-minimize expander" ></i></div>
+<div><strong><a href="forumdisplay.php?fid=13">Alışveriş</a></strong><br /><div class="smalltext"></div></div>
+</td>
+</tr>
+</thead>
+<tbody style="" id="cat_13_e">
+<tr>
+<td class="tcat" colspan="2"><span class="smalltext"><strong>Forum</strong></span></td>
+<td id="threads" class="tcat" width="85" align="center" style="white-space: nowrap; font-size: 16px;"><span class="smalltext"><strong>Konu</strong></span></td>
+<td id="replies" class="tcat" width="85" align="center" style="white-space: nowrap; font-size: 16px;"><span class="smalltext"><strong>Yorum</strong></span></td>
+<td id="lastpost" class="tcat" width="350" align="center"><span class="smalltext"><strong>Son Yorum</strong></span></td>
+</tr>
+<!-- start: forumbit_depth2_forum -->
+<tr>
+<td class="trow1" align="center" width="1"><div class="forum_status forum_on ajax_mark_read" title="Yeni Yorum Var" id="mark_read_19"><i class="fa fa-comments"></i></div></td>
+<td class="trow1">
+<strong><a href="forumdisplay.php?fid=19">Diğerleri</a></strong><div class="smalltext"></div>
+</td>
+<td id="threads" class="trow1" align="center" style="font-size: 16px;white-space: nowrap">14</td>
+<td id="replies" class="trow1" align="center" style="font-size: 16px;white-space: nowrap">44</td>
+<td id="lastpost" class="trow1" align="center" style="white-space: nowrap"><!-- start: forumbit_depth2_forum_lastpost -->
+<span class="smalltext">
+<a href="showthread.php?tid=1613&amp;action=lastpost" title="STEROİD"><strong>STEROİD</strong></a> Yazar: <a href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/member.php?action=profile&amp;uid=5091">Alfazero00</a><br>
+<i style="font-size:400;" class="far fa-clock"></i> <span title="12-28-2025">Dün</span>, 06:38 AM</span>
+<!-- end: forumbit_depth2_forum_lastpost --></td>
+</tr>
+<!-- end: forumbit_depth2_forum --><!-- start: forumbit_depth2_forum -->
+<tr>
+<td class="trow2" align="center" width="1"><div class="forum_status forum_on ajax_mark_read" title="Yeni Yorum Var" id="mark_read_17"><i class="fa fa-comments"></i></div></td>
+<td class="trow2">
+<strong><a href="forumdisplay.php?fid=17">Hırsızlık</a></strong><div class="smalltext"></div>
+</td>
+<td id="threads" class="trow2" align="center" style="font-size: 16px;white-space: nowrap">8</td>
+<td id="replies" class="trow2" align="center" style="font-size: 16px;white-space: nowrap">27</td>
+<td id="lastpost" class="trow2" align="center" style="white-space: nowrap"><!-- start: forumbit_depth2_forum_lastpost -->
+<span class="smalltext">
+<a href="showthread.php?tid=1991&amp;action=lastpost" title="ACİL KREDİ LAZIM"><strong>ACİL KREDİ LAZIM</strong></a> Yazar: <a href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/member.php?action=profile&amp;uid=4784">finalboss</a><br>
+<i style="font-size:400;" class="far fa-clock"></i> 11-04-2025, 06:36 PM</span>
+<!-- end: forumbit_depth2_forum_lastpost --></td>
+</tr>
+<!-- end: forumbit_depth2_forum --><!-- start: forumbit_depth2_forum -->
+<tr>
+<td class="trow1" align="center" width="1"><div class="forum_status forum_on ajax_mark_read" title="Yeni Yorum Var" id="mark_read_18"><i class="fa fa-comments"></i></div></td>
+<td class="trow1">
+<strong><a href="forumdisplay.php?fid=18">CC</a></strong><div class="smalltext"></div>
+</td>
+<td id="threads" class="trow1" align="center" style="font-size: 16px;white-space: nowrap">44</td>
+<td id="replies" class="trow1" align="center" style="font-size: 16px;white-space: nowrap">176</td>
+<td id="lastpost" class="trow1" align="center" style="white-space: nowrap"><!-- start: forumbit_depth2_forum_lastpost -->
+<span class="smalltext">
+<a href="showthread.php?tid=2072&amp;action=lastpost" title="Fiziki Pos Temini"><strong>Fiziki Pos Temini</strong></a> Yazar: <a href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/member.php?action=profile&amp;uid=5070">Bygölge</a><br>
+<i style="font-size:400;" class="far fa-clock"></i> 12-24-2025, 06:49 PM</span>
+<!-- end: forumbit_depth2_forum_lastpost --></td>
+</tr>
+<!-- end: forumbit_depth2_forum --><!-- start: forumbit_depth2_forum -->
+<tr>
+<td class="trow2" align="center" width="1"><div class="forum_status forum_on ajax_mark_read" title="Yeni Yorum Var" id="mark_read_16"><i class="fa fa-comments"></i></div></td>
+<td class="trow2">
+<strong><a href="forumdisplay.php?fid=16">Şiddet</a></strong><div class="smalltext"></div>
+</td>
+<td id="threads" class="trow2" align="center" style="font-size: 16px;white-space: nowrap">9</td>
+<td id="replies" class="trow2" align="center" style="font-size: 16px;white-space: nowrap">26</td>
+<td id="lastpost" class="trow2" align="center" style="white-space: nowrap"><!-- start: forumbit_depth2_forum_lastpost -->
+<span class="smalltext">
+<a href="showthread.php?tid=1488&amp;action=lastpost" title="Otopside Çıkmayan Zehir"><strong>Otopside Çıkmayan Zehir</strong></a> Yazar: <a href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/member.php?action=profile&amp;uid=4867">headsstone</a><br>
+<i style="font-size:400;" class="far fa-clock"></i> 11-15-2025, 07:29 AM</span>
+<!-- end: forumbit_depth2_forum_lastpost --></td>
+</tr>
+<!-- end: forumbit_depth2_forum --><!-- start: forumbit_depth2_forum -->
+<tr>
+<td class="trow1" align="center" width="1"><div class="forum_status forum_on ajax_mark_read" title="Yeni Yorum Var" id="mark_read_15"><i class="fa fa-comments"></i></div></td>
+<td class="trow1">
+<strong><a href="forumdisplay.php?fid=15">Sahtecilik</a></strong><div class="smalltext"></div>
+</td>
+<td id="threads" class="trow1" align="center" style="font-size: 16px;white-space: nowrap">5</td>
+<td id="replies" class="trow1" align="center" style="font-size: 16px;white-space: nowrap">15</td>
+<td id="lastpost" class="trow1" align="center" style="white-space: nowrap"><!-- start: forumbit_depth2_forum_lastpost -->
+<span class="smalltext">
+<a href="showthread.php?tid=1898&amp;action=lastpost" title="ERC-20 Flash Tether usdt"><strong>ERC-20 Flash Tether usdt</strong></a> Yazar: <a href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/member.php?action=profile&amp;uid=4962">Güllü</a><br>
+<i style="font-size:400;" class="far fa-clock"></i> 12-02-2025, 01:41 PM</span>
+<!-- end: forumbit_depth2_forum_lastpost --></td>
+</tr>
+<!-- end: forumbit_depth2_forum --><!-- start: forumbit_depth2_forum -->
+<tr>
+<td class="trow2" align="center" width="1"><div class="forum_status forum_on ajax_mark_read" title="Yeni Yorum Var" id="mark_read_14"><i class="fa fa-comments"></i></div></td>
+<td class="trow2">
+<strong><a href="forumdisplay.php?fid=14">Uyuşturucu</a></strong><div class="smalltext"></div>
+</td>
+<td id="threads" class="trow2" align="center" style="font-size: 16px;white-space: nowrap">57</td>
+<td id="replies" class="trow2" align="center" style="font-size: 16px;white-space: nowrap">135</td>
+<td id="lastpost" class="trow2" align="center" style="white-space: nowrap"><!-- start: forumbit_depth2_forum_lastpost -->
+<span class="smalltext">
+<a href="showthread.php?tid=1128&amp;action=lastpost" title="Ankara içi Uyuşturucu Ve Silah Bulunur"><strong>Ankara içi Uyuşturucu Ve ...</strong></a> Yazar: <a href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/member.php?action=profile&amp;uid=4960">maykhose</a><br>
+<i style="font-size:400;" class="far fa-clock"></i> 12-01-2025, 11:05 PM</span>
+<!-- end: forumbit_depth2_forum_lastpost --></td>
+</tr>
+<!-- end: forumbit_depth2_forum -->
+</tbody>
+</table>
+<br />
+<!-- end: forumbit_depth1_cat --><!-- start: forumbit_depth1_cat -->
+<table border="0" cellspacing="0" cellpadding="7" class="tborder">
+<thead>
+<tr>
+<td class="thead" colspan="5">
+<div class="expcolimage"><i id="cat_20_img" class="fa fa-window-minimize expander" ></i></div>
+<div><strong><a href="forumdisplay.php?fid=20">Teknoloji</a></strong><br /><div class="smalltext"></div></div>
+</td>
+</tr>
+</thead>
+<tbody style="" id="cat_20_e">
+<tr>
+<td class="tcat" colspan="2"><span class="smalltext"><strong>Forum</strong></span></td>
+<td id="threads" class="tcat" width="85" align="center" style="white-space: nowrap; font-size: 16px;"><span class="smalltext"><strong>Konu</strong></span></td>
+<td id="replies" class="tcat" width="85" align="center" style="white-space: nowrap; font-size: 16px;"><span class="smalltext"><strong>Yorum</strong></span></td>
+<td id="lastpost" class="tcat" width="350" align="center"><span class="smalltext"><strong>Son Yorum</strong></span></td>
+</tr>
+<!-- start: forumbit_depth2_forum -->
+<tr>
+<td class="trow2" align="center" width="1"><div class="forum_status forum_on ajax_mark_read" title="Yeni Yorum Var" id="mark_read_21"><i class="fa fa-comments"></i></div></td>
+<td class="trow2">
+<strong><a href="forumdisplay.php?fid=21">Teknoloji Genel</a></strong><div class="smalltext"></div>
+</td>
+<td id="threads" class="trow2" align="center" style="font-size: 16px;white-space: nowrap">29</td>
+<td id="replies" class="trow2" align="center" style="font-size: 16px;white-space: nowrap">91</td>
+<td id="lastpost" class="trow2" align="center" style="white-space: nowrap"><!-- start: forumbit_depth2_forum_lastpost -->
+<span class="smalltext">
+<a href="showthread.php?tid=2067&amp;action=lastpost" title="bana crypter lazım"><strong>bana crypter lazım</strong></a> Yazar: <a href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/member.php?action=profile&amp;uid=1077">kanmana</a><br>
+<i style="font-size:400;" class="far fa-clock"></i> 12-16-2025, 07:17 PM</span>
+<!-- end: forumbit_depth2_forum_lastpost --></td>
+</tr>
+<!-- end: forumbit_depth2_forum --><!-- start: forumbit_depth2_forum -->
+<tr>
+<td class="trow1" align="center" width="1"><div class="forum_status forum_on ajax_mark_read" title="Yeni Yorum Var" id="mark_read_22"><i class="fa fa-comments"></i></div></td>
+<td class="trow1">
+<strong><a href="forumdisplay.php?fid=22">Bitcoin &amp; Altcoinler</a></strong><div class="smalltext"></div>
+</td>
+<td id="threads" class="trow1" align="center" style="font-size: 16px;white-space: nowrap">3</td>
+<td id="replies" class="trow1" align="center" style="font-size: 16px;white-space: nowrap">15</td>
+<td id="lastpost" class="trow1" align="center" style="white-space: nowrap"><!-- start: forumbit_depth2_forum_lastpost -->
+<span class="smalltext">
+<a href="showthread.php?tid=1656&amp;action=lastpost" title="Yol Gösterin"><strong>Yol Gösterin</strong></a> Yazar: <a href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/member.php?action=profile&amp;uid=4967">4C3M1CH4YLUCK</a><br>
+<i style="font-size:400;" class="far fa-clock"></i> 12-03-2025, 08:56 PM</span>
+<!-- end: forumbit_depth2_forum_lastpost --></td>
+</tr>
+<!-- end: forumbit_depth2_forum --><!-- start: forumbit_depth2_forum -->
+<tr>
+<td class="trow2" align="center" width="1"><div class="forum_status forum_on ajax_mark_read" title="Yeni Yorum Var" id="mark_read_23"><i class="fa fa-comments"></i></div></td>
+<td class="trow2">
+<strong><a href="forumdisplay.php?fid=23">Veri Sızıntıları</a></strong><div class="smalltext"></div>
+</td>
+<td id="threads" class="trow2" align="center" style="font-size: 16px;white-space: nowrap">56</td>
+<td id="replies" class="trow2" align="center" style="font-size: 16px;white-space: nowrap">232</td>
+<td id="lastpost" class="trow2" align="center" style="white-space: nowrap"><!-- start: forumbit_depth2_forum_lastpost -->
+<span class="smalltext">
+<a href="showthread.php?tid=2066&amp;action=lastpost" title="Kimlik fotoğrafları lazım"><strong>Kimlik fotoğrafları lazım</strong></a> Yazar: <a href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/member.php?action=profile&amp;uid=5031">bekirdereghetto31</a><br>
+<i style="font-size:400;" class="far fa-clock"></i> 12-16-2025, 08:31 AM</span>
+<!-- end: forumbit_depth2_forum_lastpost --></td>
+</tr>
+<!-- end: forumbit_depth2_forum --><!-- start: forumbit_depth2_forum -->
+<tr>
+<td class="trow1" align="center" width="1"><div class="forum_status forum_on ajax_mark_read" title="Yeni Yorum Var" id="mark_read_24"><i class="fa fa-comments"></i></div></td>
+<td class="trow1">
+<strong><a href="forumdisplay.php?fid=24">Development</a></strong><div class="smalltext"></div>
+</td>
+<td id="threads" class="trow1" align="center" style="font-size: 16px;white-space: nowrap">5</td>
+<td id="replies" class="trow1" align="center" style="font-size: 16px;white-space: nowrap">23</td>
+<td id="lastpost" class="trow1" align="center" style="white-space: nowrap"><!-- start: forumbit_depth2_forum_lastpost -->
+<span class="smalltext">
+<a href="showthread.php?tid=588&amp;action=lastpost" title="trojan"><strong>trojan</strong></a> Yazar: <a href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/member.php?action=profile&amp;uid=5064">Anon-514123</a><br>
+<i style="font-size:400;" class="far fa-clock"></i> 12-23-2025, 09:07 PM</span>
+<!-- end: forumbit_depth2_forum_lastpost --></td>
+</tr>
+<!-- end: forumbit_depth2_forum --><!-- start: forumbit_depth2_forum -->
+<tr>
+<td class="trow2" align="center" width="1"><div class="forum_status forum_on ajax_mark_read" title="Yeni Yorum Var" id="mark_read_25"><i class="fa fa-comments"></i></div></td>
+<td class="trow2">
+<strong><a href="forumdisplay.php?fid=25">Crack</a></strong><div class="smalltext"></div>
+</td>
+<td id="threads" class="trow2" align="center" style="font-size: 16px;white-space: nowrap">5</td>
+<td id="replies" class="trow2" align="center" style="font-size: 16px;white-space: nowrap">7</td>
+<td id="lastpost" class="trow2" align="center" style="white-space: nowrap"><!-- start: forumbit_depth2_forum_lastpost -->
+<span class="smalltext">
+<a href="showthread.php?tid=1713&amp;action=lastpost" title="Tüm Edit Programları"><strong>Tüm Edit Programları</strong></a> Yazar: <a href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/member.php?action=profile&amp;uid=4657">ananoymous</a><br>
+<i style="font-size:400;" class="far fa-clock"></i> 10-20-2025, 10:42 PM</span>
+<!-- end: forumbit_depth2_forum_lastpost --></td>
+</tr>
+<!-- end: forumbit_depth2_forum -->
+</tbody>
+</table>
+<br />
+<!-- end: forumbit_depth1_cat --><!-- start: forumbit_depth1_cat -->
+<table border="0" cellspacing="0" cellpadding="7" class="tborder">
+<thead>
+<tr>
+<td class="thead" colspan="5">
+<div class="expcolimage"><i id="cat_26_img" class="fa fa-window-minimize expander" ></i></div>
+<div><strong><a href="forumdisplay.php?fid=26">Karışık</a></strong><br /><div class="smalltext"></div></div>
+</td>
+</tr>
+</thead>
+<tbody style="" id="cat_26_e">
+<tr>
+<td class="tcat" colspan="2"><span class="smalltext"><strong>Forum</strong></span></td>
+<td id="threads" class="tcat" width="85" align="center" style="white-space: nowrap; font-size: 16px;"><span class="smalltext"><strong>Konu</strong></span></td>
+<td id="replies" class="tcat" width="85" align="center" style="white-space: nowrap; font-size: 16px;"><span class="smalltext"><strong>Yorum</strong></span></td>
+<td id="lastpost" class="tcat" width="350" align="center"><span class="smalltext"><strong>Son Yorum</strong></span></td>
+</tr>
+<!-- start: forumbit_depth2_forum -->
+<tr>
+<td class="trow2" align="center" width="1"><div class="forum_status forum_on ajax_mark_read" title="Yeni Yorum Var" id="mark_read_27"><i class="fa fa-comments"></i></div></td>
+<td class="trow2">
+<strong><a href="forumdisplay.php?fid=27">İtiraflar</a></strong><div class="smalltext"></div>
+</td>
+<td id="threads" class="trow2" align="center" style="font-size: 16px;white-space: nowrap">9</td>
+<td id="replies" class="trow2" align="center" style="font-size: 16px;white-space: nowrap">59</td>
+<td id="lastpost" class="trow2" align="center" style="white-space: nowrap"><!-- start: forumbit_depth2_forum_lastpost -->
+<span class="smalltext">
+<a href="showthread.php?tid=1639&amp;action=lastpost" title="a101 kasiyerini taciz ettim"><strong>a101 kasiyerini taciz ett...</strong></a> Yazar: <a href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/member.php?action=profile&amp;uid=4987">seyduna</a><br>
+<i style="font-size:400;" class="far fa-clock"></i> 12-07-2025, 12:45 PM</span>
+<!-- end: forumbit_depth2_forum_lastpost --></td>
+</tr>
+<!-- end: forumbit_depth2_forum --><!-- start: forumbit_depth2_forum -->
+<tr>
+<td class="trow1" align="center" width="1"><div class="forum_status forum_on ajax_mark_read" title="Yeni Yorum Var" id="mark_read_28"><i class="fa fa-comments"></i></div></td>
+<td class="trow1">
+<strong><a href="forumdisplay.php?fid=28">Porn</a></strong><div class="smalltext"></div>
+</td>
+<td id="threads" class="trow1" align="center" style="font-size: 16px;white-space: nowrap">21</td>
+<td id="replies" class="trow1" align="center" style="font-size: 16px;white-space: nowrap">77</td>
+<td id="lastpost" class="trow1" align="center" style="white-space: nowrap"><!-- start: forumbit_depth2_forum_lastpost -->
+<span class="smalltext">
+<a href="showthread.php?tid=2062&amp;action=lastpost" title="Olympus"><strong>Olympus</strong></a> Yazar: <a href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/member.php?action=profile&amp;uid=5016">emirkaann</a><br>
+<i style="font-size:400;" class="far fa-clock"></i> 12-12-2025, 08:32 PM</span>
+<!-- end: forumbit_depth2_forum_lastpost --></td>
+</tr>
+<!-- end: forumbit_depth2_forum --><!-- start: forumbit_depth2_forum -->
+<tr>
+<td class="trow2" align="center" width="1"><div class="forum_status forum_on ajax_mark_read" title="Yeni Yorum Var" id="mark_read_29"><i class="fa fa-comments"></i></div></td>
+<td class="trow2">
+<strong><a href="forumdisplay.php?fid=29">Siyaset</a></strong><div class="smalltext"></div>
+</td>
+<td id="threads" class="trow2" align="center" style="font-size: 16px;white-space: nowrap">15</td>
+<td id="replies" class="trow2" align="center" style="font-size: 16px;white-space: nowrap">63</td>
+<td id="lastpost" class="trow2" align="center" style="white-space: nowrap"><!-- start: forumbit_depth2_forum_lastpost -->
+<span class="smalltext">
+<a href="showthread.php?tid=1732&amp;action=lastpost" title="YAKINDA ERDOĞANI DEVİRECEĞİZ"><strong>YAKINDA ERDOĞANI DEVİRECE...</strong></a> Yazar: <a href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/member.php?action=profile&amp;uid=5092">ssd34</a><br>
+<i style="font-size:400;" class="far fa-clock"></i> <span title="12-28-2025">Dün</span>, 07:19 AM</span>
+<!-- end: forumbit_depth2_forum_lastpost --></td>
+</tr>
+<!-- end: forumbit_depth2_forum --><!-- start: forumbit_depth2_forum -->
+<tr>
+<td class="trow1" align="center" width="1"><div class="forum_status forum_on ajax_mark_read" title="Yeni Yorum Var" id="mark_read_30"><i class="fa fa-comments"></i></div></td>
+<td class="trow1">
+<strong><a href="forumdisplay.php?fid=30">Dinler</a></strong><div class="smalltext"></div>
+</td>
+<td id="threads" class="trow1" align="center" style="font-size: 16px;white-space: nowrap">9</td>
+<td id="replies" class="trow1" align="center" style="font-size: 16px;white-space: nowrap">144</td>
+<td id="lastpost" class="trow1" align="center" style="white-space: nowrap"><!-- start: forumbit_depth2_forum_lastpost -->
+<span class="smalltext">
+<a href="showthread.php?tid=22&amp;action=lastpost" title="Bütün Dinler Neden Böyle??"><strong>Bütün Dinler Neden Böyle?...</strong></a> Yazar: <a href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/member.php?action=profile&amp;uid=5092">ssd34</a><br>
+<i style="font-size:400;" class="far fa-clock"></i> <span title="12-28-2025">Dün</span>, 07:13 AM</span>
+<!-- end: forumbit_depth2_forum_lastpost --></td>
+</tr>
+<!-- end: forumbit_depth2_forum --><!-- start: forumbit_depth2_forum -->
+<tr>
+<td class="trow2" align="center" width="1"><div class="forum_status forum_on ajax_mark_read" title="Yeni Yorum Var" id="mark_read_31"><i class="fa fa-comments"></i></div></td>
+<td class="trow2">
+<strong><a href="forumdisplay.php?fid=31">Konu Dışı</a></strong><div class="smalltext"></div>
+</td>
+<td id="threads" class="trow2" align="center" style="font-size: 16px;white-space: nowrap">9</td>
+<td id="replies" class="trow2" align="center" style="font-size: 16px;white-space: nowrap">24</td>
+<td id="lastpost" class="trow2" align="center" style="white-space: nowrap"><!-- start: forumbit_depth2_forum_lastpost -->
+<span class="smalltext">
+<a href="showthread.php?tid=1251&amp;action=lastpost" title="Sizce &quot;Nightstalker&quot; Lakaplı Richard Ramirez Yaşıyor mu?"><strong>Sizce &quot;Nightstalker&quot; Laka...</strong></a> Yazar: <a href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/member.php?action=profile&amp;uid=5095">katilimben</a><br>
+<i style="font-size:400;" class="far fa-clock"></i> <span title="12-28-2025">Dün</span>, 12:44 PM</span>
+<!-- end: forumbit_depth2_forum_lastpost --></td>
+</tr>
+<!-- end: forumbit_depth2_forum --><!-- start: forumbit_depth2_forum -->
+<tr>
+<td class="trow1" align="center" width="1"><div class="forum_status forum_on ajax_mark_read" title="Yeni Yorum Var" id="mark_read_32"><i class="fa fa-comments"></i></div></td>
+<td class="trow1">
+<strong><a href="forumdisplay.php?fid=32">Çöp Kutusu</a></strong><div class="smalltext"></div>
+</td>
+<td id="threads" class="trow1" align="center" style="font-size: 16px;white-space: nowrap">1</td>
+<td id="replies" class="trow1" align="center" style="font-size: 16px;white-space: nowrap">1</td>
+<td id="lastpost" class="trow1" align="center" style="white-space: nowrap"><!-- start: forumbit_depth2_forum_lastpost -->
+<span class="smalltext">
+<a href="showthread.php?tid=1562&amp;action=lastpost" title="Panel"><strong>Panel</strong></a> Yazar: <a href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/member.php?action=profile&amp;uid=3998">KARSUT</a><br>
+<i style="font-size:400;" class="far fa-clock"></i> 06-05-2025, 05:19 PM</span>
+<!-- end: forumbit_depth2_forum_lastpost --></td>
+</tr>
+<!-- end: forumbit_depth2_forum -->
+</tbody>
+</table>
+<br />
+<!-- end: forumbit_depth1_cat --><!-- start: index_boardstats -->
+<span class="wo_title"><i class="fa fa-question-circle"></i> Kimler Çevrimiçi</span>
+
+<span class="wo_desc"><!-- start: index_whosonline -->
+<span>Şu an <strong>0</strong> üye, <strong>1</strong> ziyaretçi aktif.<br /></span>
+<!-- end: index_whosonline --></span>
+<br />
+<!-- end: index_boardstats --></div>
+	
+<div class="side" style="float: right; width: 22%; margin: auto;">
+
+
+<table class="tborder" border="0" cellpadding="7" cellspacing="0">
+<tbody><tr>
+   <td style="font-weight: bold;" class="thead">
+  <i class="fa fa-bullhorn"></i> Announcements 
+   </td>
+</tr>
+
+<tr>
+   <td class="trow2" style="padding:11px">
+      <a href="#">This is an example !</a>
+   </td>
+</tr>
+</tbody></table>
+
+ <table style="margin-top: 10px; margin-bottom: 10px;" class="tborder" border="0" cellpadding="7" cellspacing="0">
+
+<tbody><tr>
+   <td style="font-weight: bold;" class="thead">
+  <i class="fa fa-chart-bar"></i> Statistics
+   </td>
+</tr>
+
+<tr>
+   <td style="padding: 12px;" class="trow2">
+  <span style="float:left">Members :</span> <span style="float:right">5100</span>
+   </td>
+</tr>
+   
+<tr>
+   <td style="padding: 12px;" class="trow2">
+  <span style="float:left">Posts :</span> <span style="float:right">4747 </span>
+   </td>
+</tr>
+   
+<tr>
+   <td style="padding: 12px;" class="trow2">
+  <span style="float:left">Threads :</span> <span style="float:right">1204</span>
+   </td>
+</tr>
+<tr style="">
+   <td style="padding: 12px;" class="trow2">
+  <span style="float:left">Newest Member :</span> <span style="float:right"><a href="#"><a href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/member.php?action=profile&amp;uid=5100">v67mn456</a></a></span>
+   </td>
+</tr>
+</tbody></table>
+</div>
+<br class="clear" />
+<!-- start: footer -->
+</div></div><footer class="footer-distributed">
+
+			
+
+			<div class="footer-left">
+
+				
+
+				<p style="" class="footer-links">
+					Shadow Forum
+				</p>
+
+				
+			</div>
+
+			
+
+			<div style="" class="footer-right">
+
+				
+
+				<div class="footer-icons" style="display: none">
+
+					<a href="#"><i style="margin-top: 6px;" class="fab fa-youtube"></i></a>
+					<a href="#"><i style="margin-top: 6px;" class="fab fa-facebook-f"></i></a>
+					<a href="#"><i style="margin-top: 6px;" class="fab fa-twitter"></i></a>
+					<a href="#"><i style="margin-top: 6px;" class="fab fa-linkedin"></i></a>
+					<a href="#"><i style="margin-top: 6px;" class="fab fa-github"></i></a>
+
+				</div>
+
+			</div>
+		<div style="display: block;" class="scrollToTop"><i class="fa fa-angle-up"></i></div>
+		<div class="scrollToDown"><i class="fa fa-angle-down"></i></div>
+		
+		</footer>
+<script>
+	if (connected == 0)
+	{ jQuery("#mobile_member").html("<a href='member.php?action=login'>Login</a> - <a href='member.php?action=register'>Register</a>"); }
+	if (connected == 1)
+	{ document.getElementById("mobile_member").innerHTML = '<a title="Inbox" href="private.php">Inbox</a> - <a title="User CP" href="usercp.php">User CP</a> - <a title="Log Out" href="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/member.php?action=logout&amp;logoutkey=">Logout</a>'; }
+</script>
+<!-- The following piece of code allows MyBB to run scheduled tasks. DO NOT REMOVE --><!-- start: task_image -->
+<img src="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/task.php" width="1" height="1" alt="" style="display:none" />
+<!-- end: task_image --><!-- End task image code -->
+<!-- end: footer --><!-- start: accountswitcher_footer -->
+<script type="text/javascript">
+        // <!--
+            reply_button = "";
+            as_desc_button = " as ";
+            account_id = parseInt(0);
+            account_name = "";
+            can_switch = parseInt(0);
+            dropdown_reload = 1;
+            user_post_key = "d85737c8417b8e7d32a785e24204d4db";
+            switch_success_text = "Account successfully switched to ";
+            AS_SCRIPT = "index.php";
+        // -->
+        </script>
+        <script src="http://w4ljqtyjnxinknz4hszn4bsof7zhfy5z2h4srfss4vvkoikiwz36o3id.onion/jscripts/accountswitcher/as_script.min.js?v=2109" type="text/javascript"></script>
+<!-- end: accountswitcher_footer -->
+</body>
+</html>
+<!-- end: index -->
